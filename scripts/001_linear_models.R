@@ -9,6 +9,7 @@ library(tidyverse)
 library(corrplot)
 library(ggpubr)
 library(ggbump)
+library(ggthemes)
 
 #--DATASET--#
 fish_data <- read_csv('data/fish_data.csv') %>%
@@ -56,24 +57,33 @@ ggplot(test, aes(x=factor(characteristics, level=level_order), y=measurement, co
     geom_path(group='species')
 
 test2 <- read_csv('data/fish_data.csv') %>%
-        select(!c(site,price, habitat, store_location, cooking_time)) %>%
+        select(!c(spines, site,price, habitat, store_location, cooking_time)) %>%
         mutate(score = score-15) %>%
         filter(score >=1) %>%
         gather(key="characteristics", value ='measurement', -species) %>%
         mutate(characteristics=factor(characteristics)) %>%
-        mutate(characteristics=fct_relevel(characteristics, c('spines','flavour_ns', 'flavour_ws', 'texture', 'next_bite', 'score'))) %>%
+        mutate(characteristics=fct_relevel(characteristics, c('flavour_ns', 'flavour_ws', 'texture', 'next_bite', 'score'))) %>%
         arrange(characteristics) %>%
         mutate(characteristics2 = as.numeric(characteristics))
 
+order_for_legend<- test2 %>%
+      mutate(characteristics = as.character(characteristics)) %>%
+      filter(characteristics == 'score') %>%
+      group_by(species) %>%
+      arrange(desc(measurement)) %>%
+      pull(species)
 
-ggplot(test2, aes(x=characteristics2, y=measurement, color=species))+
-    geom_bump(size = 1.5)+
-  geom_text(data = test2 %>% filter(characteristics2 == max(characteristics2)),
-            aes(x = characteristics2 + 0.1, label = species),
-            size = 10, hjust = "inward", vjust="inward") +
-  scale_color_brewer(palette = "Pastel1") +
-  theme_void() +
-  theme(legend.position = "none")
+test2$species_ordered <- factor(test2$species, levels = order_for_legend)
+
+ggplot(test2, aes(x=characteristics2, y=measurement, color=species_ordered))+
+    geom_point(size = 5) +
+    geom_bump() +
+  theme_clean() +
+  theme(legend.position = c(0.75,0.10))
+
+
+
+
 
 ggsave()
 # Calculate effect sizes
