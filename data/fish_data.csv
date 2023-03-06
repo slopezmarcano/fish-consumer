@@ -1,33 +1,36 @@
-﻿species,site,price,flavour_ns,flavour_ws,texture,spines,next_bite,habitat,store_location,cooking_time,score
-Priacanthus arenatus ,Caribbean,50,5,5,5,1,5,epipelagic,ice,30,20
-Lutjanus sebae,Australia,22,3.7,4.8,4.4,0,4.5,demersal,filet,15,18.7
-Salmo salar (sashimi),Australia,,5,5,2.2,0,4.9,anadromous,sashimi,0,18.8
-Anguilla japonica,Japan,30,1.9,5,5,0,4.9,estuary,packaged,20,19.7
-Plectropomus leopardus,Australia,,3.9,4,3.9,0,3,epipelagic,filet,20,17.5
-Pagrus auratus,Australia,,2,3.9,3.8,0,3.1,,filet,20,16.2
-Sebastes alutus,Australia,,1.5,3.5,4.2,0,3.2,,filet,15,15.4
-Diagramma pictum labiosum,Australia,,2,3.8,3.5,0,3,,filet,20,14.8
-Salmo salar (cooked),Australia,,2,4.4,3.9,0,1.8,,filet,30,16.7
-Lates calcarifer,Australia,,1.5,3.8,4.1,1,2.4,,filet,20,15.3
-Acanthostracion polygonius,Caribbean,,1.9,3.9,3.4,1,2.5,demersal,ice,60,14.1
-Cadus spp,Australia,,1.4,3.1,2.7,0,2.8,,filet,,14
-Cacharhinus acronotus,Caribbean,,0,3.8,3.5,1,3.7,,ice,,15.6
-Cyttus traversi,Australia,,1.7,2.9,3.1,0,1.9,,filet,,13.6
-Lutjanus campechanus,Caribbean,,2.4,3.1,3,1,2.1,,ice,,13.4
-Thunnus alalunga,Australia,,1.8,2.8,2.9,0,1.7,,filet,,12.8
-Sillago ciliata,Australia,,0.9,2.8,2.8,0,2.7,,filet,,13.9
-Xiphias gladius,Australia,,1.4,2.7,3.1,0,1.9,,filet,,12.1
-Galeorhinus galeus,Caribbean,,0,3.8,2.5,1,3.7,,packaged,,14
-Seriola lalandi (smoked),Australia,,0,3.8,2.5,0,2.5,,packaged,,16.4
-Epinephelus lanceolatus,Australia,,1.2,3.1,3.4,1,1.8,,ice,,15.7
-Brachyplatystoma vaillanti,Amazon,10,0,2.7,2.8,0,2.5,estuary,packaged,0,11.7
-Scombrinae spp,Australia,,1.2,2.4,1.7,0,1.9,,filet,,10.9
-Squatina squatina,Caribbean,,0,2.7,2.4,1,2.4,,packaged,,14.1
-Scomberomorus cavalla,Caribbean,,0,2.8,2.4,1,1.8,,filet,,11
-Scomberomorus brasiliensis,Caribbean,,0,2.8,2.4,1,1.8,,filet,,11
-Scaridae spp,Caribbean,,0,2.7,2.4,1,1.4,,ice,,9.4
-Anisotremus surinamensis,Caribbean,,0,2.4,2.4,1,1.7,,ice,30,12.5
-Trichiurus lepturus,Caribbean,,0,1.7,1.8,1,1,,packaged,,9.7
-Polydactylus macrochir,Australia,,1,1.6,1,1,0.8,,filet,,8.4
-Platycephalus fuscus,Australia,,0.8,1.4,1.1,1,0.7,,ice,40,8.1
-Pomatomus saltatrix,Australia,,1,1,1,1,1,,ice,70,4.2
+﻿species,site,flavour_no_seasoning,flavour_with_seasoning,texture,spines,next_bite,store_location,price_per_kg,habitat,diet,marine_zone,cooking_time,score
+Priacanthus arenatus ,Caribbean,5,5,5,1,5,ice,14,Reef,Carnivorous,Demersal zone,8,20
+Lutjanus sebae,Australia,3.7,4.8,4.4,0,4.5,filet,10,Reef,Carnivorous,Demersal zone,10,18.7
+Salmo salar (sashimi),Australia,5,5,2.2,0,4.9,sashimi,20,Ocean,Carnivorous,Pelagic zone,0,18.8
+Anguilla japonica,Japan,1.9,5,5,0,4.9,packaged,10,Freshwater,Carnivorous,,7,19.7
+Plectropomus leopardus,Australia,3.9,4,3.9,0,3,filet,22,Reef,Carnivorous,Demersal zone,12,17.5
+Pagrus auratus,Australia,2,3.9,3.8,0,3.1,filet,12,Reef,Omnivorous,Demersal zone,10,16.2
+Sebastes alutus,Australia,1.5,3.5,4.2,0,3.2,filet,8,Ocean,Carnivorous,Demersal and benthic,8,15.4
+Diagramma pictum labiosum,Australia,2,3.8,3.5,0,3,filet,15,Reef,Carnivorous,Demersal zone,9,14.8
+Salmo salar (cooked),Australia,2,4.4,3.9,0,1.8,filet,15,Ocean,Carnivorous,Pelagic zone,10,16.7
+Lates calcarifer,Australia,1.5,3.8,4.1,1,2.4,filet,12,Estuary,Carnivorous,,9,15.3
+Acanthostracion polygonius,Caribbean,1.9,3.9,3.4,1,2.5,ice,12,Reef,Omnivorous,Demersal zone,10,14.1
+Cadus spp,Australia,1.4,3.1,2.7,0,2.8,filet,8,Ocean,Carnivorous,Pelagic and benthic,6,14
+Cacharhinus acronotus,Caribbean,0,3.8,3.5,1,3.7,ice,7,Ocean,Carnivorous,Pelagic and benthic,8,15.6
+Cyttus traversi,Australia,1.7,2.9,3.1,0,1.9,filet,13,Ocean,Carnivorous,Pelagic and demersal zone,15,13.6
+Lutjanus campechanus,Caribbean,2.4,3.1,3,1,2.1,ice,11,Reef,Carnivorous,Demersal zone,10,13.4
+Thunnus alalunga,Australia,1.8,2.8,2.9,0,1.7,filet,22,Ocean,Carnivorous,Pelagic zone,8,12.8
+Sillago ciliata,Australia,0.9,2.8,2.8,0,2.7,filet,7,Estuary,Omnivorous,,6,13.9
+Xiphias gladius,Australia,1.4,2.7,3.1,0,1.9,filet,19,Ocean,Carnivorous,Pelagic zone,10,12.1
+Galeorhinus galeus,Caribbean,0,3.8,2.5,1,3.7,packaged,8,Ocean,Carnivorous,Demersal and benthic,8,14
+Seriola lalandi (smoked),Australia,0,3.8,2.5,0,2.5,packaged,24,Ocean,Carnivorous,Pelagic and demersal zone,12,16.4
+Epinephelus lanceolatus,Australia,1.2,3.1,3.4,1,1.8,ice,25,Reef,Carnivorous,Demersal zone,15,15.7
+Brachyplatystoma vaillanti,Amazon,0,2.7,2.8,0,2.5,packaged,20,Freshwater,Carnivorous,,20,11.7
+Scombrinae spp,Australia,1.2,2.4,1.7,0,1.9,filet,9,Ocean,Carnivorous,Pelagic zone,10,10.9
+Squatina squatina,Caribbean,0,2.7,2.4,1,2.4,packaged,12,Ocean,Carnivorous,Benthic zone,20,14.1
+Scomberomorus cavalla,Caribbean,0,2.8,2.4,1,1.8,filet,8,Ocean,Carnivorous,Pelagic and demersal zone,10,11
+Scomberomorus brasiliensis,Caribbean,0,2.8,2.4,1,1.8,filet,6,Ocean,Carnivorous,Pelagic and demersal zone,10,11
+Scaridae spp,Caribbean,0,2.7,2.4,1,1.4,ice,15,Reef,Herbivorous,Demersal zone,8,9.4
+Anisotremus surinamensis,Caribbean,0,2.4,2.4,1,1.7,ice,10,Reef,Omnivorous,Demersal zone,10,12.5
+Trichiurus lepturus,Caribbean,0,1.7,1.8,1,1,packaged,7,Ocean,Carnivorous,Pelagic and demersal zone,7,9.7
+Polydactylus macrochir,Australia,1,1.6,1,1,0.8,filet,8,Estuary,Carnivorous,,8,8.4
+Platycephalus fuscus,Australia,0.8,1.4,1.1,1,0.7,ice,14,Benthic habitat,Carnivorous,Demersal and benthic,15,8.1
+Pomatomus saltatrix,Australia,1,1,1,1,1,ice,6,Ocean,Carnivorous,Pelagic zone,10,4.2
+Oncorhynchus gorbuscha,United States,3.8,3.9,3.7,1,2.4,packaged,12,Ocean,Carnivorous,Pelagic zone,10,
+Lophius spp,Australia,,,,,,filet,7,Benthic habitat,Carnivorous,Benthic zone,15,
+Genypterus blacodes,New Zealand,,,,,,filet,9,Estuary,Omnivorous,Demersal zone,8,
