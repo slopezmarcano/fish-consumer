@@ -15,13 +15,14 @@ showtext_auto()
 
 #--VISUALISE RESULTS--#
 #FORMAT THE DATA IN THE GGBUMP FORMAT
+
 fish_data_2 <- read_csv('data/fish_data.csv') %>%
-        select(!c(spines, site,price, habitat, store_location, cooking_time)) %>%
+        select(!c(spines, site,price_per_kg, habitat, store_location, cooking_time, marine_zone, diet)) %>%
         mutate(score = score-15) %>%
         filter(score >=1) %>%
         gather(key="characteristics", value ='measurement', -species) %>%
         mutate(characteristics=factor(characteristics)) %>%
-        mutate(characteristics=fct_relevel(characteristics, c('flavour_ns', 'flavour_ws', 'texture', 'next_bite', 'score'))) %>%
+        mutate(characteristics=fct_relevel(characteristics, c('flavour_no_seasoning', 'flavour_with_seasoning', 'texture', 'next_bite', 'score'))) %>%
         arrange(characteristics) %>%
         mutate(characteristics2 = as.numeric(characteristics))
 #DEFINE ORDER FOR GGPLOT LEGEND
@@ -35,7 +36,7 @@ order_for_legend<- fish_data_2 %>%
 fish_data_2$species_ordered <- factor(fish_data_2$species, levels = order_for_legend)
 #DEFINE PALETTE
 palettini <- c("#293241", "#ee6c4d", "#98c1d9", "#ef476f",
-              "#3d5a80", "#f6bd60", "#af1e78", "#4FB477")
+              "#3d5a80", "#f6bd60", "#af1e78", "#4FB477", "#c324cf")
 
 
 #--DEFINE THEME--#
@@ -104,7 +105,8 @@ plot<- ggplot(fish_data_2, aes(x=characteristics2, y=measurement, color=species_
     labs(x= "Tasting Progression", y = "Ranking",
         title = "Fish that I like to eat",
         subtitle = paste("From the Caribbean to Australia, here are my top 10 fish that I like to eat.", "\n",
-        "The current total amount of fish tasted are", nrow(fish_data), ". The last time this graph was updated was", Sys.Date(), ".",
+        "A higher ranking (close to 5) means that those fish are highly rated and the best", "\n",
+        "The current total amount of fish tasted are", nrow(read_csv('data/fish_data.csv')), ". The last time this graph was updated was", Sys.Date(), ".",
         sep='\n'),
         caption = "Visualization by S Lopez Marcano")
 

@@ -11,5 +11,5 @@ If you see `003_mixed_effect_models.ipynb` you will see that I have a strong pre
 
 Here is the preliminary plot of my mixed effect model
 <p align="center">
-<img src="outputs/preliminary_cook_price_graph.png" width='350'/>
+<img src="outputs/fish_that_i_like_to_eat_page_1.png" width='350'/>
 </p>
