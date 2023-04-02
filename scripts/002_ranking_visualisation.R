@@ -15,11 +15,10 @@ showtext_auto()
 
 #--VISUALISE RESULTS--#
 #FORMAT THE DATA IN THE GGBUMP FORMAT
-
 fish_data_2 <- read_csv('data/fish_data.csv') %>%
         select(!c(spines, site,price_per_kg, habitat, store_location, cooking_time, marine_zone, diet)) %>%
         mutate(score = score-15) %>%
-        filter(score >=1) %>%
+        filter(score >=1.5) %>%
         gather(key="characteristics", value ='measurement', -species) %>%
         mutate(characteristics=factor(characteristics)) %>%
         mutate(characteristics=fct_relevel(characteristics, c('flavour_no_seasoning', 'flavour_with_seasoning', 'texture', 'next_bite', 'score'))) %>%
@@ -103,11 +102,11 @@ plot<- ggplot(fish_data_2, aes(x=characteristics2, y=measurement, color=species_
     scale_color_manual(legend_title, values = palettini)+
     theme(legend.position = c(0.5,0.20)) +
     labs(x= "Tasting Progression", y = "Ranking",
-        title = "Fish that I like to eat",
-        subtitle = paste("From the Caribbean to Australia, here are my top 10 fish that I like to eat.", "\n",
-        "A higher ranking (close to 5) means that those fish are highly rated and the best", "\n",
-        "The current total amount of fish tasted are", nrow(read_csv('data/fish_data.csv')), ". The last time this graph was updated was", Sys.Date(), ".",
+        title = "My fish reviewing journey",
+        subtitle = paste("From the Caribbean to Australia, here are my top 10 fish that I like to eat. The tasting progression axis indicates how my score", "\n",
+        "changes when reviewing each tasting category. A higher ranking (close to 5) means that those fish are highly rated and the", "\n",
+        "best. The current total amount of fish tasted are", nrow(read_csv('data/fish_data.csv')), ". The last time this graph was updated was", Sys.Date(), ".",
         sep='\n'),
         caption = "Visualization by S Lopez Marcano")
 
-ggsave("outputs/fish_that_i_like_to_eat.pdf", height=12)
+ggsave("outputs/fish_that_i_like_to_eat.pdf", height=12, width=13)
