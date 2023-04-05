@@ -4,7 +4,7 @@ Anguilla japonica,Japan,1.9,5,5,0,4.9,packaged,10,Freshwater,Carnivorous,,7,19.7
 Salmo salar (sashimi),Australia,5,5,2.2,0,4.9,sashimi,20,Ocean,Carnivorous,Pelagic zone,0,18.8
 Lutjanus sebae,Australia,3.7,4.8,4.4,0,4.5,filet,10,Reef,Carnivorous,Demersal zone,10,18.7
 Plectropomus leopardus,Australia,3.9,4,3.9,0,3,filet,22,Reef,Carnivorous,Demersal zone,12,17.5
-Nemadactylus macropterus,New Zeland,4.7,4.8,4.7,0,4.2,filet,22,Reef,Carnivorous,Demersal zone,12,17.4
+Nemadactylus macropterus,New Zealand,4.7,4.8,4.7,0,4.2,filet,22,Reef,Carnivorous,Demersal zone,12,17.4
 Salmo salar (cooked),Australia,2,4.4,3.9,0,1.8,filet,15,Ocean,Carnivorous,Pelagic zone,10,16.7
 Lophius spp,Australia,3.9,4.1,3.1,0,2.9,filet,7,Benthic habitat,Carnivorous,Benthic zone,15,16.5
 Seriola lalandi (smoked),Australia,0,3.8,2.5,0,2.5,packaged,24,Ocean,Carnivorous,Pelagic and demersal zone,12,16.4
@@ -38,3 +38,6 @@ Pomatomus saltatrix,Australia,1,1,1,1,1,ice,6,Ocean,Carnivorous,Pelagic zone,10,
 O.mykiss (Steelhead - smoked),Norway,3.7,3.7,3.7,0,3.9,packaged,44,Freshwater,Carnivorous,,0,14.2
 Salmo salar (smoked),Autralia,3.4,3.8,3.4,0,4.1,packaged,40,Ocean,Carnivorous,Pelagic and demersal zone,0,16.8
 Centroberyx gerrardi,Australia,2.4,3.4,4.1,0,2.8,filet,39,Benthic habitat,Carnivorous,Demersal zone,12,12.5
+Salmo salar (katsu),Australia,4.7,4.8,3.7,0,4.7,filet,25,Ocean,Carnivorous,Pelagic and demersal zone,15,16.4
+Pangasius bocourti,Vietnam,2.4,2.9,2.7,0,2.9,filet,10,Freshwater,Omnivorous,,8,11.7
+Macruronus novazelandiae,New Zealand,3.7,3.7,2.7,0,2.4,packaged,15,Estuary,Carnivorous,Demersal zone,12,12.8

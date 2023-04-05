@@ -17,5 +17,5 @@ with Image(filename=input_file) as pdf:
         with Image(page) as img:
             img.format = 'png'
             #Output filename
-            output_file = os.path.join(output_dir, f'{os.path.splitext(input_file)[0]}_page_{i+1}.png')
+            output_file = os.path.join(output_dir, f'{os.path.splitext(input_file)[0]}_page_{i+4}.png')
             img.save(filename=output_file)
