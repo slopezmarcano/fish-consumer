@@ -19,3 +19,5 @@ plot <- read_csv('data/fish_data.csv') %>%
 ggplot(aes(x = score, y = reorder(species, desc(score)))) + #TODO #6
   geom_segment(aes(xend = 0, yend = species), color = "#ef476f") +
   geom_point(size = 3, color = "#ef476f")
+
+

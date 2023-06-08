@@ -3,7 +3,7 @@
 
 ## My Top 10 fish
 <p align="center">
-<img src="outputs/fish_that_i_like_to_eat_page_4.png" width='450'/>
+<img src="outputs/fish_that_i_like_to_eat5_page_5.png" width='450'/>
 </p>
 
 ## Influence of fish habitat, price and cooking time on score
