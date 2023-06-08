@@ -18,7 +18,7 @@ showtext_auto()
 fish_data_2 <- read_csv('data/fish_data.csv') %>%
         select(!c(spines, site,price_per_kg, habitat, store_location, cooking_time, marine_zone, diet)) %>%
         mutate(score = score-15) %>%
-        filter(score >=1.5) %>%
+        filter(score >=2) %>%
         gather(key="characteristics", value ='measurement', -species) %>%
         mutate(characteristics=factor(characteristics)) %>%
         mutate(characteristics=fct_relevel(characteristics, c('flavour_no_seasoning', 'flavour_with_seasoning', 'texture', 'next_bite', 'score'))) %>%
@@ -35,7 +35,7 @@ order_for_legend<- fish_data_2 %>%
 fish_data_2$species_ordered <- factor(fish_data_2$species, levels = order_for_legend)
 #DEFINE PALETTE
 palettini <- c("#293241", "#ee6c4d", "#98c1d9", "#ef476f",
-              "#3d5a80", "#f6bd60", "#af1e78", "#4FB477", "#c324cf")
+              "#3d5a80", "#f6bd60", "#af1e78", "#4FB477", "#c324cf", "#56a0d3", "#ff7869", "#bdffea", "#ffc6e3")
 
 
 #--DEFINE THEME--#
@@ -109,4 +109,4 @@ plot<- ggplot(fish_data_2, aes(x=characteristics2, y=measurement, color=species_
         sep='\n'),
         caption = "Visualization by S Lopez Marcano")
 
-ggsave("outputs/fish_that_i_like_to_eat.pdf", height=12, width=13)
+ggsave("outputs/fish_that_i_like_to_eat5.pdf", height=12, width=13)
